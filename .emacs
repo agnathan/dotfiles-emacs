@@ -1,3 +1,6 @@
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Highlight color values
 (defvar hexcolour-keywords
   '(("#[abcdef[:digit:]]\\{6\\}"
      (0 (put-text-property
@@ -9,6 +12,7 @@
   (font-lock-add-keywords nil hexcolour-keywords))
 
 (add-hook 'css-mode-hook 'hexcolour-add-to-font-lock)
+;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 ;; Custom 'apropos' key bindings
